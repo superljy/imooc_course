@@ -1,2 +1,4 @@
-# imooc_course
-pratice and demo
+# My DEMO collection
+
+updated video_player demo
+the first time I write !
