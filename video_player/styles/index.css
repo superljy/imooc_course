@@ -1,0 +1,147 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+
+.container{
+	width: 640px;
+	height: 360px;
+	margin: 30px auto;
+	position: relative;
+	overflow: hidden;
+	background: #dedede;
+}
+
+.caption{
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: #ccc;
+	padding: 10px;
+	font-size: 20px;
+	font-weight: bold;
+	background: #1f1f1f;
+	z-index: 1;
+}
+
+.control{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	color: #ccc;
+	background: #1f1f1f;
+	z-index: 1;
+}
+
+.control .top{
+	height: 11px;
+	border-bottom: 1px solid #404040;
+	padding: 1px 5px;
+	background: #1f1f1f;
+}
+
+.control .top .progess{
+	width: 85%;
+	height: 10px;
+	float: left;
+	position: relative;
+	background: #404040;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.control .top .progess .time-bar{
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	background: #f9d43a;
+	border-radius: 5px;
+	z-index: 3;
+	width: 0px;	/* 控制进度 */
+}
+
+.control .top .time{
+	width: 15%;
+	float: right;
+	font-size: 0;
+	text-align: center;
+	line-height: 12px;
+}
+
+.control .top .time span{
+	font-size: 12px;
+}
+
+.control .bottom{
+	clear: both;
+	background: #1f1f1f;
+}
+
+.control .bottom .btn{
+	width: 32px;
+	height: 32px;
+	float: left;
+	padding: 0 5px;
+	cursor: pointer;
+}
+
+.control .bottom .speed-btn{
+	font-size: 16px;
+	line-height: 32px;
+	font-weight: bold;
+	text-align: center;
+	color: #777;
+}
+
+.control .bottom .selected{
+	color: #fff;
+}
+
+.control .bottom .play-btn{
+	background: url(../img/start.png) no-repeat center center;
+}
+
+.control .bottom .stop-btn{
+	background: url(../img/stop.png) no-repeat center center;
+}
+
+.control .bottom .vol-btn{
+	background: url(../img/volume.png) no-repeat center center;
+	float: right;
+}
+
+.control .bottom .volume{
+	position: relative;
+	float: right;
+	width: 70px;
+	height: 10px;
+	margin: 10px 10px 0 0;
+	background: #404040;
+}
+
+.control .bottom .volume .vol-bar{
+	width: 10px;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #eee;
+	z-index: 2;
+}
+
+.loading{
+	width: 55px;
+	height: 55px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -27px;
+	margin-top: -27px;
+	background: url(../img/loading.gif) no-repeat center center;
+	display: none;
+	z-index: 1;
+}
