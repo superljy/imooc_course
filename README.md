@@ -2,6 +2,8 @@
 
 updated video_player demo
 
-updated a front page of N.E.X.T
+updated a frontPage of N.E.X.T
 
-updated bluegogo event page
+updated Bluegogo & China Telecom event page
+
+updated a frontPage_demo
