@@ -1,4 +1,7 @@
 # My DEMO collection
 
 updated video_player demo
-the first time I write !
+
+updated a front page of N.E.X.T
+
+updated bluegogo event page
