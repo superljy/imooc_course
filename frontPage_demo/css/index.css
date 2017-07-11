@@ -1,0 +1,184 @@
+/* clearfloat */
+.clear{
+	zoom: 1;
+}
+.clear:after{
+	display: block;
+	height: 0;
+	content: "";
+	clear:both;
+	overflow: hidden;
+}
+
+/* header start */
+header{
+	width: 100%;
+	background-color: #f8f8f8;
+}
+
+.navbar-brand{
+	height: 100px;
+}
+
+.navbar-brand img{
+	height: 100%;
+}
+
+.navbar-nav>li>a{
+	line-height: 70px;
+	font-weight: bold;
+}
+
+/* header end */
+
+/* banner start */
+.banner{
+	height: 600px;
+	position: relative;
+}
+
+.banner img{
+	width: 100%;
+	height: 100%;
+}
+
+.shade{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #000;
+	opacity: .3;
+}
+
+.middle-info{
+	position: absolute;
+	width: 500px;
+	height: 300px;
+	top: 50%;
+	left: 50%;
+	margin-left: -250px;
+	margin-top: -150px;
+	text-align: center;
+}
+
+.middle-info h2{
+	margin-top: 100px;
+	color: #fff;
+	font-size: 50px;
+	font-weight: bold;
+}
+
+.middle-info button{
+	background-color: rgb(245, 112, 79);
+	width: 200px;
+	height: 60px;
+	color: #fff;
+	font-size: 20px;
+	margin-top: 50px;
+	border: 0;
+}
+
+/* banner end */
+
+/* section start */
+section{
+	margin-top: 50px;
+}
+
+section .row{
+	text-align: center;
+}
+
+section .discri{
+	margin-top: 20px;
+	margin-bottom: 50px;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+section .content{
+	color: pink;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+section .intro{
+	padding-top: 50px;
+}
+
+section .intro-item{
+	padding: 10px;
+	width: 33%;
+}
+
+section .intro-item img{
+	width: 100%;
+}
+
+section .intro-item .intro-content1{
+	color: #7c7d7f;
+	font-size: 20px;
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+section .intro-item .intro-content2{
+	color: #bdbdbc;
+	font-size: 20px;
+	margin-top: 10px;
+	font-weight: bold;
+}
+/* section end */
+
+/* article start */
+article{
+	width: 100%;
+	background-color: #f9f9f9;
+	padding-bottom: 30px;
+}
+
+article .art-title{
+	text-align: center;
+	color: #7c7d7f;
+	padding: 50px 0 40px;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+article .art{
+	padding: 10px;
+}
+
+article .art-item{
+	width: 50%;
+	padding: 10px;
+}
+
+article .art-item img{
+	width: 100%;
+}
+
+article .art-content{
+	font-size: 20px;
+	font-weight: bold;
+	color: #7c7d7f;
+	padding-top: 20px;
+}
+/* article end */
+
+/* footer start */
+footer{
+	background-color: rgb(41, 44, 53);
+	width: 100%;
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+}
+
+footer span{
+	color: #fff;
+	font-size: 18px;
+}
+/* footer end */
