@@ -1,29 +1,37 @@
 $(document).ready(function(){
-    // var windowHeight = $(window).height();
-    // $("section").height((windowHeight - 60) + "px");
-    // weibo
-    $(".weibo").on("mouseover",function(){
-        $(".weibo").attr("src","img/weibo.png");
-    });
+    var index = 0;
+    // 首页联系方式图标鼠标划过表现效果
+    $(".connection>li>a>img").hover(activePic,defaultPic);
 
-    $(".weibo").on("mouseout",function(){
-        $(".weibo").attr("src","img/weibo-d.png");
-    });
-    // weixin
-    $(".weixin").on("mouseover",function(){
-        $(".weixin").attr("src","img/weixin.png");
-    });
-
-    $(".weixin").on("mouseout",function(){
-        $(".weixin").attr("src","img/weixin-d.png");
-    });
-    // mail
-    $(".mail").on("mouseover",function(){
-        $(".mail").attr("src","img/mail.png");
-    });
-
-    $(".mail").on("mouseout",function(){
-        $(".mail").attr("src","img/mail-d.png");
-    });
 });
 
+function activePic(){
+    index = $(".connection>li>a>img").index($(this));
+    switch(index){
+        case 0:
+            $(".connection>li>a>img").eq(index).attr("src","img/weibo.png");
+            break;
+        case 1:
+            $(".connection>li>a>img").eq(index).attr("src","img/weixin.png");
+            $(".weixin-code").show();
+            break;
+        case 2:
+            $(".connection>li>a>img").eq(index).attr("src","img/mail.png");
+            break;
+    }
+}
+
+function defaultPic(){
+    switch(index){
+        case 0:
+            $(".connection>li>a>img").eq(index).attr("src","img/weibo-d.png");
+            break;
+        case 1:
+            $(".connection>li>a>img").eq(index).attr("src","img/weixin-d.png");
+            $(".weixin-code").hide();
+            break;
+        case 2:
+            $(".connection>li>a>img").eq(index).attr("src","img/mail-d.png");
+            break;
+    }
+}

@@ -97,14 +97,16 @@ section .content .connection{
 
 section .content .connection li{
     width: 40px;
+    height: 40px;
+}
+
+section .content .connection li a{
+    display: block;
+    height: 40px;
 }
 
 section .content .connection li.weixin{
     position: relative;
-}
-
-section .content .connection li.weixin:hover .weixin-code{
-    display: block;
 }
 
 section .content .connection li img{

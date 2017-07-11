@@ -1,8 +1,9 @@
 /* reset start */
-html,body,div,h1,h2,h3,h4,h5,h6,a,img,span,ul,ol,li{
+html,body,div,h1,h2,h3,h4,h5,h6,a,img,span,ul,ol,li,p{
     margin: 0;
     padding: 0;
     border: 0;
+    box-sizing: border-box;
 }
 
 a{
@@ -17,31 +18,53 @@ ul,ol{
 
 .container{
     width: 100%;
-    position: relative;
+    height: 100%;
+    overflow: hidden;
 }
 
+.container::after{
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    overflow: hidden;
+}
 /* header start */
 header{
     width: 100%;
     height: 60px;
-    background: rgba(0,0,0,.05);
+    background: #5b3586;
     position: fixed;
+    z-index: 5;
+    opacity: .8;
+}
+
+header .logo{
+    height: 60px;
+    margin-left: 20px;
+}
+
+header .logo img{
+    height: 100%;
 }
 
 header .nav-icon{
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     position: absolute;
     top: 50%;
-    margin-top: -25px;
+    margin-top: -15px;
     left: 52%;
+    border: 1px solid #422761;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 header .nav-icon .icon-bar{
-    width: 30px;
-    height: 2px;
-    background: #999;
-    margin: 10px auto
+    width: 20px;
+    height: 3px;
+    background: #fff;
+    margin: 5px auto
 }
 /* header end */
 
@@ -52,9 +75,11 @@ header .nav-icon .icon-bar{
     top: 0;
     left: 0;
     bottom: 0;
-    background: url(../img/banner.jpg) no-repeat;
+    right: 50%;
+    background: url("../img/pic02.jpg") no-repeat;
     background-size: cover;
     background-position: 50% 50%;
+    overflow: hidden;
 }
 
 .lSide-cover{
@@ -68,11 +93,14 @@ header .nav-icon .icon-bar{
 
 .lSide-contact{
     width: 100%;
-    height: 100%;
+    background: #422761;
     position: absolute;
     top: 0;
-    left: 0;
+    right: 0;
+    bottom: 0;
     z-index: 2;
+    padding: 20px;
+    display: none;
 }
 
 .lSide-contact ul{
@@ -86,13 +114,131 @@ header .nav-icon .icon-bar{
 
 .lSide-contact ul li{
     width: 100%;
-    height: 50px;
+    height: 100px;
     text-align: center;
+    line-height: 100px;
     color: #fff;
-    font-size: 2em;
+    font-size: 1.2em;
+    border-bottom: 1px solid rgba(221, 221, 221, .2);
+}
+
+.lSide-contact ul li:first-child{
+    font-size: 1.8em;
+    font-weight: bold;
+    border-bottom: 0;
+}
+
+.lSide-contact .light{
+    width: 30%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    background: linear-gradient(-90deg,rgba(255,255,255,0),rgba(255, 255, 255, .5),rgba(255, 255, 255, 0));
+    transform: skew(-45deg);
+    transition: 1s;
+    animation: light 5s linear infinite;
+}
+
+@keyframes light{
+    0{
+        left: -120%;
+    }
+    15%{
+        left: -85%;
+    }
+    30%{
+        left: -50%;
+    }
+    45%{
+        left: -15%;
+    }
+    60%{
+        left: 20%;
+    }
+    75%{
+        left: 55%;
+    }
+    90%{
+        left: 90%;
+    }
+    100%{
+        left: 120%;
+    }
 }
 /* left side end */
 
 /* right side start */
+.rSide{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    bottom: 0;
+    right: 0;
+    background: #8261a9;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.rSide .rSide-content{
+    width: 80%;
+    height: 100%;
+    padding: 80px 20px 20px;
+    margin: 0 auto;
+}
+
+.rSide .rSide-content h2{
+    margin: 30px 0 10px 10px;
+    color: #fff;
+}
+
+.rSide .skill{
+    width: 100%;
+    position: relative;
+}
+
+.rSide .skill::after{
+    display: block;
+    content: "";
+    clear: both;
+    overflow: hidden;
+    height: 0;
+}
+
+.rSide .skill .skill-item{
+    width: 100%;
+    margin: 20px 0;
+}
+
+.rSide .skill .skill-item::after{
+    display: block;
+    content: "";
+    clear: both;
+    overflow: hidden;
+    height: 0;
+}
+
+.rSide .skill .skill-item .skill-img{
+    float: left;
+    width: 80px;
+    height: 80px;
+    margin: 0 20px 20px 0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+}
+
+.rSide .skill .skill-item .skill-img img{
+    width: 100%;
+    padding: 5px;
+}
+
+.rSide .skill .skill-item h3{
+    margin-bottom: 10px;
+}
+
+.rSide .skill .skill-item h3,.rSide .skill .skill-item p{
+    color: #ccc;
+}
 
 /* right side end */
