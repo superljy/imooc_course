@@ -1,0 +1,140 @@
+/* reset start */
+html,body,div,h1,h2,h3,h4,h5,h6,a,img,span,ul,ol,li{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+ul,ol{
+    list-style: none;
+}
+/* reset end */
+
+body{
+    background-color: #422761;
+}
+
+/* header start */
+header{
+    width: 100%;
+    height: 60px;
+    background-color: #5b3586;
+}
+
+header nav{
+    height: 40px;
+    padding: 10px;
+}
+
+header nav ul.navbar{
+    float: right;
+}
+
+header nav ul.navbar li{
+    float: left;
+    line-height: 20px;
+    margin-right: 50px;
+    border: 1px solid #5b3586;
+    border-radius: 5px;
+}
+
+header nav ul.navbar li a{
+    display: inline-block;
+    height: 20px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+header nav ul.navbar li:hover{
+    background-color: #422761;
+}
+
+header nav ul.navbar .active{
+    background-color: #422761;
+    border-radius: 5px;
+}
+/* header end */
+
+/* content start */
+section{
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+section .content{
+    max-width: 350px;
+    margin: 100px auto;
+    text-align: center;
+}
+
+section .content .logo{
+    margin: 0 auto 40px;
+}
+
+section .content .logo img{
+    width: 250px;
+}
+
+section .content .title{
+    font-size: 2.5em;
+    font-weight: bold;
+    line-height: 1.15em;
+    color: #fff;
+    margin-bottom: 50px;
+}
+
+section .content .connection{
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+section .content .connection li{
+    width: 40px;
+}
+
+section .content .connection li.weixin{
+    position: relative;
+}
+
+section .content .connection li.weixin:hover .weixin-code{
+    display: block;
+}
+
+section .content .connection li img{
+    width: 100%;
+}
+
+section .content .connection .weixin-code{
+    width: 200px;
+    background: #fff;
+    position: absolute;
+    top: 60px;
+    left: -75px;
+    display: none;
+}
+
+section .content .connection .weixin-code::before{
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: -30px;
+    left: 40%;
+    border-top: 15px solid transparent;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid #fff;
+}
+
+section .content .connection .weixin-code img{
+    width: 100%;
+}
+/* content start */
