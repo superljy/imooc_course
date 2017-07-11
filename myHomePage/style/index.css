@@ -1,8 +1,10 @@
 /* reset start */
-html,body,div,h1,h2,h3,h4,h5,h6,a,img,span,ul,ol,li{
+html,body,div,h1,h2,h3,h4,h5,h6,a,img,span,ul,ol,li,p{
     margin: 0;
     padding: 0;
     border: 0;
+    font-family: "微软雅黑";
+    box-sizing: border-box;
 }
 
 a{
@@ -33,10 +35,12 @@ header nav{
 
 header nav ul.navbar{
     float: right;
+    height: 40px;
 }
 
 header nav ul.navbar li{
     float: left;
+    height: 40px;
     line-height: 20px;
     margin-right: 50px;
     border: 1px solid #5b3586;
@@ -45,7 +49,7 @@ header nav ul.navbar li{
 
 header nav ul.navbar li a{
     display: inline-block;
-    height: 20px;
+    height: 40px;
     padding: 10px;
     font-weight: bold;
 }

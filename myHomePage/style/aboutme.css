@@ -135,9 +135,25 @@ header .nav-icon .icon-bar{
     top: 0;
     left: -100%;
     background: linear-gradient(-90deg,rgba(255,255,255,0),rgba(255, 255, 255, .5),rgba(255, 255, 255, 0));
+    background: -webkit-linear-gradient(-90deg,rgba(255,255,255,0),rgba(255, 255, 255, .5),rgba(255, 255, 255, 0));
+    background: -moz-linear-gradient(-90deg,rgba(255,255,255,0),rgba(255, 255, 255, .5),rgba(255, 255, 255, 0));
+    background: -o-linear-gradient(-90deg,rgba(255,255,255,0),rgba(255, 255, 255, .5),rgba(255, 255, 255, 0));
+    background: -ms-linear-gradient(-90deg,rgba(255,255,255,0),rgba(255, 255, 255, .5),rgba(255, 255, 255, 0));
     transform: skew(-45deg);
+    -webkit-transform: skew(-45deg);
+    -moz-transform: skew(-45deg);
+    -o-transform: skew(-45deg);
+    -ms-transform: skew(-45deg);
     transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
     animation: light 5s linear infinite;
+    -webkit-animation: light 5s linear infinite;
+    -moz-animation: light 5s linear infinite;
+    -ms-animation: light 5s linear infinite;
+    -o-animation: light 5s linear infinite;
 }
 
 @keyframes light{
@@ -178,8 +194,9 @@ header .nav-icon .icon-bar{
     bottom: 0;
     right: 0;
     background: #8261a9;
-    overflow-x: hidden;
-    overflow-y: auto;
+    /* overflow-x: hidden;
+    overflow-y: auto; */
+    overflow: auto;
 }
 
 .rSide .rSide-content{
