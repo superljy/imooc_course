@@ -39,13 +39,44 @@ header{
     opacity: .8;
 }
 
-header .logo{
-    height: 60px;
-    margin-left: 20px;
+/* header .logo{
+     height: 60px;
+     margin-left: 20px;
 }
 
 header .logo img{
     height: 100%;
+} */
+
+header ul.navbar{
+    float: right;
+    height: 40px;
+    padding: 10px;
+}
+
+header ul.navbar li{
+    float: left;
+    height: 40px;
+    line-height: 20px;
+    margin-right: 50px;
+    border: 1px solid #5b3586;
+    border-radius: 5px;
+}
+
+header ul.navbar li a{
+    display: inline-block;
+    height: 40px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+header ul.navbar li:hover{
+    background-color: #422761;
+}
+
+header ul.navbar .active{
+    background-color: #422761;
+    border-radius: 5px;
 }
 
 header .nav-icon{

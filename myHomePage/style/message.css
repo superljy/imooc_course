@@ -28,7 +28,7 @@ header{
     background-color: #5b3586;
 }
 
-header nav{
+/* header nav{
     padding: 0 20px;
 }
 
@@ -39,6 +39,41 @@ header nav .logo{
 
 header nav .logo img{
     height: 100%;
+} */
+
+header nav{
+    height: 40px;
+    padding: 10px;
+}
+
+header nav ul.navbar{
+    float: right;
+    height: 40px;
+}
+
+header nav ul.navbar li{
+    float: left;
+    height: 40px;
+    line-height: 20px;
+    margin-right: 50px;
+    border: 1px solid #5b3586;
+    border-radius: 5px;
+}
+
+header nav ul.navbar li a{
+    display: inline-block;
+    height: 40px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+header nav ul.navbar li:hover{
+    background-color: #422761;
+}
+
+header nav ul.navbar .active{
+    background-color: #422761;
+    border-radius: 5px;
 }
 /* header end */
 
@@ -109,5 +144,11 @@ header nav .logo img{
     border: 0;
     color: #ccc;
     font-size: 1.3em;
+    outline: 0;
+    cursor: pointer;
+}
+
+.content .content-form button:hover{
+    background: #6e4998;
 }
 /* section content end */
