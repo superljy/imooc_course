@@ -1,6 +1,6 @@
-My DEMO collection    by 2017/7/14
+My DEMO collection    by 2017/7/14  
 ===================================
----
+
 updated video_player demo  
 =====
 播放器实现以下功能
