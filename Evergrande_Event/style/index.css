@@ -1,0 +1,124 @@
+/* reset start */
+html,body,div,h1,h2,h3,h4,h5,h6,span,a,ul,ol,li,form,input,textarea,button{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: -apple-system, "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Source Han Sans CN", "Source Han Sans SC", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
+}
+
+ul,ol,li{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+}
+/* reset end */
+
+/* bg pic start */
+.container{
+	width: 7.5rem;
+	height: 13.34rem;
+	margin: 0 auto;
+	background: url('../img/bg.png') no-repeat;
+	background-size: cover;
+	position: relative;
+}
+/* bg pic end */
+
+/* content start */
+/* top nav */
+.navbar{
+	width: 100%;
+	height: .78rem;
+}
+
+.navbar img{
+	width: 100%;
+	position: absolute;
+}
+
+/* ball logo */
+.crazy-ball{
+	width: 1.14rem;
+	height: .96rem;
+	position: absolute;
+	top: .98rem;
+	left: .31rem;
+}
+
+.crazy-ball img{
+	width: 100%;
+	height: 100%;
+}
+
+/* pre logo */
+.pre-logo{
+	width: 1.77rem;
+	height: 1.13rem;
+	position: absolute;
+	top: .85rem;
+	right: .22rem;
+}
+
+.pre-logo img{
+	width: 100%;
+	height: 100%;
+}
+
+/* flag */
+.flag{
+	width: 2.03rem;
+	height: 2.03rem;
+	position: absolute;
+	top: 3.88rem;
+	left: .73rem;
+}
+
+.flag img{
+	width: 100%;
+	height: 100%;
+}
+
+.s5{
+	width: .92rem;
+	height: .63rem;
+	position: absolute;
+	top: .11rem;
+	left: .9rem;
+}
+
+.s5 img{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+/* old client */
+.old-client{
+	width: 3.7rem;
+	position: absolute;
+	left: 1.9rem;
+	right: 1.9rem;
+	top: 4.43rem;
+}
+
+.old-client img{
+	width: 100%;
+	height: 100%;
+}
+
+/* free */
+.free{
+	position: absolute;
+	left: .94rem;
+	right: .95rem;
+	top: 5.4rem;
+	margin-top: .14rem;
+}
+
+.free img{
+	width: 100%;
+	height: 100%;
+}
+/* content end */
