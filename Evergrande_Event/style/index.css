@@ -13,6 +13,11 @@ ul,ol,li{
 a{
 	text-decoration: none;
 }
+
+img{
+	width: 100%;
+	height: 100%;
+}
 /* reset end */
 
 /* bg pic start */
@@ -31,11 +36,20 @@ a{
 .navbar{
 	width: 100%;
 	height: .78rem;
+	position: relative;
 }
 
 .navbar img{
-	width: 100%;
 	position: absolute;
+}
+
+.navbar a{
+	display: block;
+    width: 1.3rem;
+    height: .6rem;
+    position: absolute;
+    top: .14rem;
+    right: .13rem;
 }
 
 /* ball logo */
@@ -47,11 +61,6 @@ a{
 	left: .31rem;
 }
 
-.crazy-ball img{
-	width: 100%;
-	height: 100%;
-}
-
 /* pre logo */
 .pre-logo{
 	width: 1.77rem;
@@ -61,23 +70,22 @@ a{
 	right: .22rem;
 }
 
-.pre-logo img{
-	width: 100%;
-	height: 100%;
-}
 
+/* main-content */
+.main-content{
+	position: absolute;
+	top: 4.43rem;
+	width: 5.5rem;
+	left: 50%;
+	margin-left: -2.75rem;
+}
 /* flag */
 .flag{
 	width: 2.03rem;
 	height: 2.03rem;
 	position: absolute;
-	top: 3.88rem;
-	left: .73rem;
-}
-
-.flag img{
-	width: 100%;
-	height: 100%;
+	top: -.55rem;
+	left: -.3rem;
 }
 
 .s5{
@@ -89,36 +97,50 @@ a{
 }
 
 .s5 img{
-	width: 100%;
-	height: 100%;
 	position: absolute;
 }
 
 /* old client */
 .old-client{
 	width: 3.7rem;
-	position: absolute;
-	left: 1.9rem;
-	right: 1.9rem;
-	top: 4.43rem;
-}
-
-.old-client img{
-	width: 100%;
-	height: 100%;
+	height: .92rem;
+	margin: 0 auto;
 }
 
 /* free */
 .free{
 	position: absolute;
-	left: .94rem;
-	right: .95rem;
-	top: 5.4rem;
-	margin-top: .14rem;
+	top: 1.06rem;
 }
 
-.free img{
-	width: 100%;
-	height: 100%;
+/* quota */
+.quota{
+	width: 5.22rem;
+    height: .39rem;
+    position: relative;
+    left: .2rem;
+    top: 1.2rem;
+    margin-top: .27rem;
+    color: #fff;
+    font-size: .41rem;
+    font-weight: bold;
+    text-align: center;
+    line-height: .39rem;
+    letter-spacing: 3px;
 }
+
+/* time */
+.time{
+	width: 3.96rem;
+	height: .29rem;
+	margin-top: 1.45rem;
+	margin-left: .8rem;
+	color: #fff;
+	font-size: .3rem;
+	text-align: center;
+	line-height: .29rem;
+}
+
+/* form */
+
 /* content end */
