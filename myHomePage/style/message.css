@@ -75,6 +75,17 @@ header nav ul.navbar .active{
     background-color: #422761;
     border-radius: 5px;
 }
+
+@media (max-width:768px){
+    header nav ul.navbar{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    header nav ul.navbar li{
+        margin-right: 10px;
+    }
+}
 /* header end */
 
 /* section content start */
@@ -150,5 +161,53 @@ header nav ul.navbar .active{
 
 .content .content-form button:hover{
     background: #6e4998;
+}
+
+@media (min-width:320px) and (max-width: 767px){
+    section .container{
+        margin: 50px auto;
+    }
+    section .container .title{
+        height: 70px;
+    }
+    section .container .title h1{
+        font-size: 1.5em;
+    }
+    section .container .title h4{
+        font-size: .9em;
+    }
+    section .content .content-form label{
+        font-size: 1em;
+        margin-bottom: 10px;
+        padding-left: 0;
+    }
+    section .content .content-form .usr-name{
+        width: 100%;
+        margin: 0 0 10px 0;
+    }
+    section .content .content-form .usr-message{
+        width: 100%;
+        margin: 0 0 10px 0;
+    }
+    section .content .content-form button{
+        width: 100%;
+    }
+}
+
+@media (min-width:768px) and (max-width: 992px){
+    section .content .content-form label{
+        padding-left: 0;
+    }
+    section .content .content-form .usr-name{
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
+    section .content .content-form .usr-message{
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
+    section .content .content-form button{
+        width: 100%;
+    }
 }
 /* section content end */

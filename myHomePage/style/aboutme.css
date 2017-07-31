@@ -97,6 +97,21 @@ header .nav-icon .icon-bar{
     background: #fff;
     margin: 5px auto
 }
+ 
+@media (max-width: 991px) {
+    header{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    header ul.navbar{
+        display: none;
+    }
+    header .nav-icon{
+        position: static;
+        margin: 15px;
+    }
+}
+
 /* header end */
 
 /* left side start */
@@ -287,6 +302,19 @@ header .nav-icon .icon-bar{
 
 .rSide .skill .skill-item h3,.rSide .skill .skill-item p{
     color: #ccc;
+}
+
+@media (max-width: 991px){
+    .lSide{
+        position: static;
+    }
+    .lSide-cover{
+        display: none;
+    }
+    .rSide{
+        width: 100%;
+        position: static;
+    }
 }
 
 /* right side end */
