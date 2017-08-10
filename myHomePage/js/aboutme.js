@@ -1,5 +1,5 @@
 $(document).ready(function(){
 	$(".nav-icon").on("click",function(){
-		$(".lSide-contact").animate({width:"toggle"});
+		$(".lSide-contact").animate({width:"toggle"},500);
 	});
 })
