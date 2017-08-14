@@ -3,6 +3,10 @@ $(document).ready(function(){
     // 首页联系方式图标鼠标划过表现效果
     $(".connection>li>a>img").hover(activePic,defaultPic);
 
+    $("#fullPage").fullpage({
+        paddingTop:'60px',
+        controlArrowColor:'#999'
+    });
 });
 
 function activePic(){
