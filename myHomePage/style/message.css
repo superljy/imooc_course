@@ -30,7 +30,7 @@ body{
 header{
     width: 100%;
     height: 60px;
-    background-color: #5b3586;
+    background-color: rgba(120,174,228,.5);
 }
 
 /* header nav{
@@ -61,7 +61,7 @@ header nav ul.navbar li{
     height: 40px;
     line-height: 20px;
     margin-right: 50px;
-    border: 1px solid #5b3586;
+    border: 1px solid #c4e0ee;
     border-radius: 5px;
 }
 
@@ -73,11 +73,11 @@ header nav ul.navbar li a{
 }
 
 header nav ul.navbar li:hover{
-    background-color: #422761;
+    background-color: #c4e0ee;
 }
 
 header nav ul.navbar .active{
-    background-color: #422761;
+    background-color: #c4e0ee;
     border-radius: 5px;
 }
 
@@ -95,7 +95,7 @@ header nav ul.navbar .active{
 
 /* section content start */
 .container-fluid{
-    margin-top: 100px;
+    padding-top: 100px;
 }
 
 .panel{
@@ -169,6 +169,11 @@ header nav ul.navbar .active{
 
 .content .message{
     color: #999;
+}
+
+.back-top{
+    margin-top: 100px;
+    display: none;
 }
 
 /* @media (min-width:320px) and (max-width: 767px){

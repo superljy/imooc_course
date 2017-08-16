@@ -41,21 +41,30 @@ $(document).ready(function(){
 		}
 	});
 
-
+	// 留言刷新
 	function refresh(){
-		comments.empty();
-		$.getJSON("../server/data.php",function(json){
-			$.each(json,function(index,array){
-				// var text = "<p><strong>昵称:" + array["user"] + "</strong>" + array["comment"] + "<span>" + array["addtime"] + "</span></p>";
-				// comments.append(text);
-				var user = $("<td>").html(array["user"]);
-				var comment = $("<td>").html(array["comment"]);
-				var addTime = $("<td>").html(array["addtime"]);
-				var tRow = $("<tr>");
-				tRow.append(user,comment,addTime);
-				comments.append(tRow);
-			});
-			
-		});
+	comments.empty();
+	$.getJSON("../server/data.php",function(json){
+		$.each(json,function(index,array){
+			// var text = "<p><strong>昵称:" + array["user"] + "</strong>" + array["comment"] + "<span>" + array["addtime"] + "</span></p>";
+			// comments.append(text);
+			var user = $("<td>").html(array["user"]);
+			var comment = $("<td>").html(array["comment"]);
+			var addTime = $("<td>").html(array["addtime"]);
+			var tRow = $("<tr>");
+			tRow.append(user,comment,addTime);
+			comments.append(tRow);
+		});	
+	});
+}
+
+	//回到顶部按钮
+	var clientHeight = $(window).height();
+	var scrollTop = $(window).scrollTop();
+	if (scrollTop >= clientHeight/2) {
+		$(".back-top").show(500);
+	}else{
+		$(".back-top").hide(500);
 	}
 });
+

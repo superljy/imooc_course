@@ -228,7 +228,8 @@ section .arrow span{
 }
 
 .page2 .intro{
-    /* margin-top: -60px; */
+    width: 80%;
+    margin: 0 auto;
     text-align: center;
     overflow: hidden;
 }
