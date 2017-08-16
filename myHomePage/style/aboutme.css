@@ -147,6 +147,7 @@ header .nav-icon .icon-bar{
     z-index: 2;
     padding: 20px;
     display: none;
+    overflow: hidden;
 }
 
 .lSide-contact ul{
@@ -172,6 +173,10 @@ header .nav-icon .icon-bar{
     font-size: 1.8em;
     font-weight: bold;
     border-bottom: 0;
+}
+
+.lSide-contact ul li:last-child a{
+    text-decoration: underline;
 }
 
 .lSide-contact .light{

@@ -5,7 +5,13 @@ $(document).ready(function(){
 
     $("#fullPage").fullpage({
         paddingTop:'60px',
-        controlArrowColor:'#999'
+        controlArrowColor:'#999',
+        afterLoad:function(anchorLink,index){
+            console.log(index);
+            if (index == 2) {
+                $(".page2").addClass("current");
+            }
+        }
     });
 });
 
@@ -13,14 +19,14 @@ function activePic(){
     index = $(".connection>li>a>img").index($(this));
     switch(index){
         case 0:
-            $(".connection>li>a>img").eq(index).attr("src","img/weibo.png");
+            $(".connection>li>a>img").eq(index).attr("src","img/weibo-d.png");
             break;
         case 1:
-            $(".connection>li>a>img").eq(index).attr("src","img/weixin.png");
+            $(".connection>li>a>img").eq(index).attr("src","img/weixin-d.png");
             $(".weixin-code").show();
             break;
         case 2:
-            $(".connection>li>a>img").eq(index).attr("src","img/mail.png");
+            $(".connection>li>a>img").eq(index).attr("src","img/mail-d.png");
             break;
     }
 }
@@ -28,14 +34,14 @@ function activePic(){
 function defaultPic(){
     switch(index){
         case 0:
-            $(".connection>li>a>img").eq(index).attr("src","img/weibo-d.png");
+            $(".connection>li>a>img").eq(index).attr("src","img/weibo.png");
             break;
         case 1:
-            $(".connection>li>a>img").eq(index).attr("src","img/weixin-d.png");
+            $(".connection>li>a>img").eq(index).attr("src","img/weixin.png");
             $(".weixin-code").hide();
             break;
         case 2:
-            $(".connection>li>a>img").eq(index).attr("src","img/mail-d.png");
+            $(".connection>li>a>img").eq(index).attr("src","img/mail.png");
             break;
     }
 }
