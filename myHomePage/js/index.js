@@ -7,9 +7,15 @@ $(document).ready(function(){
         paddingTop:'60px',
         controlArrowColor:'#999',
         afterLoad:function(anchorLink,index){
-            console.log(index);
+            if (index == 1) {
+                $(".page1 .logo").addClass("animated bounceInRight");
+                $(".page1 .title").addClass("animated bounceInLeft");
+            }
             if (index == 2) {
                 $(".page2").addClass("current");
+                $(".page2 .intro h1").addClass("animated fadeInDown");
+                $(".page2 .intro p").addClass("animated rotateInUpLeft");
+                $(".page2 .intro img").show().addClass("animated zoomIn");
             }
         }
     });

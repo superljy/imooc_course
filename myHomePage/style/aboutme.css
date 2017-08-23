@@ -33,7 +33,7 @@ ul,ol{
 header{
     width: 100%;
     height: 60px;
-    background: #5b3586;
+    background-color: rgba(120,174,228,.5);
     position: fixed;
     z-index: 5;
     opacity: .8;
@@ -50,7 +50,7 @@ header .logo img{
 
 header ul.navbar{
     float: right;
-    height: 40px;
+    height: 100%;
     padding: 10px;
 }
 
@@ -59,7 +59,7 @@ header ul.navbar li{
     height: 40px;
     line-height: 20px;
     margin-right: 50px;
-    border: 1px solid #5b3586;
+    border: 1px solid #c4e0ee;
     border-radius: 5px;
 }
 
@@ -71,11 +71,11 @@ header ul.navbar li a{
 }
 
 header ul.navbar li:hover{
-    background-color: #422761;
+    background-color: #c4e0ee;
 }
 
 header ul.navbar .active{
-    background-color: #422761;
+    background-color: #c4e0ee;
     border-radius: 5px;
 }
 
@@ -86,7 +86,7 @@ header .nav-icon{
     top: 50%;
     margin-top: -15px;
     left: 52%;
-    border: 1px solid #422761;
+    border: 1px solid #c4e0ee;
     border-radius: 5px;
     cursor: pointer;
 }
@@ -139,7 +139,7 @@ header .nav-icon .icon-bar{
 
 .lSide-contact{
     width: 100%;
-    background: #422761;
+    background: #b1c7dc;
     position: absolute;
     top: 0;
     right: 0;
@@ -166,7 +166,7 @@ header .nav-icon .icon-bar{
     line-height: 100px;
     color: #fff;
     font-size: 1.2em;
-    border-bottom: 1px solid rgba(221, 221, 221, .2);
+    border-bottom: 1px solid rgba(221, 221, 221, .6);
 }
 
 .lSide-contact ul li:first-child{
@@ -244,7 +244,7 @@ header .nav-icon .icon-bar{
     left: 50%;
     bottom: 0;
     right: 0;
-    background: #8261a9;
+    background: #b1c7dc;
     /* overflow-x: hidden;
     overflow-y: auto; */
     overflow: auto;
@@ -259,12 +259,14 @@ header .nav-icon .icon-bar{
 
 .rSide .rSide-content h2{
     margin: 30px 0 10px 10px;
-    color: #fff;
+    color: #333;
+    display: none;
 }
 
 .rSide .skill{
     width: 100%;
     position: relative;
+    display: none;
 }
 
 .rSide .skill::after{
@@ -306,7 +308,7 @@ header .nav-icon .icon-bar{
 }
 
 .rSide .skill .skill-item h3,.rSide .skill .skill-item p{
-    color: #ccc;
+    color: #555;
 }
 
 @media (max-width: 991px){

@@ -23,7 +23,7 @@ ul,ol{
 /* reset end */
 
 body{
-    background-color: #422761;
+    background-color: #b1c7dc;
 }
 
 /* header start */
@@ -47,16 +47,16 @@ header nav .logo img{
 } */
 
 header nav{
-    height: 40px;
+    height: 100%;
     padding: 10px;
 }
 
-header nav ul.navbar{
+header nav ul.nav-bar{
     float: right;
     height: 40px;
 }
 
-header nav ul.navbar li{
+header nav ul.nav-bar li{
     float: left;
     height: 40px;
     line-height: 20px;
@@ -65,29 +65,29 @@ header nav ul.navbar li{
     border-radius: 5px;
 }
 
-header nav ul.navbar li a{
+header nav ul.nav-bar li a{
     display: inline-block;
     height: 40px;
     padding: 10px;
     font-weight: bold;
 }
 
-header nav ul.navbar li:hover{
+header nav ul.nav-bar li:hover{
     background-color: #c4e0ee;
 }
 
-header nav ul.navbar .active{
+header nav ul.nav-bar .active{
     background-color: #c4e0ee;
     border-radius: 5px;
 }
 
 @media (max-width:768px){
-    header nav ul.navbar{
+    header nav ul.nav-bar{
         width: 100%;
         display: flex;
         justify-content: center;
     }
-    header nav ul.navbar li{
+    header nav ul.nav-bar li{
         margin-right: 10px;
     }
 }
@@ -99,17 +99,17 @@ header nav ul.navbar .active{
 }
 
 .panel{
-    background-color: #5b3586;
+    background-color: #78aee4;
 }
 
 .panel-default{
-    border: 1px solid #5b3586;
+    border: 1px solid #78aee4;
 }
 
 .panel-default>.panel-heading{
-    color: #999;
-    background-color: #5b3586;
-    border: 1px solid #5b3586;
+    color: #444;
+    background-color: #78aee4;
+    border: 1px solid #78aee4;
     text-align: center;
 }
 
@@ -130,7 +130,7 @@ header nav ul.navbar .active{
 
 .content .content-form label{
     display: block;
-    color: #999;
+    color: #444;
     font-size: 1.5em;
     text-align: left;
     /* padding-left: 80px; */
@@ -155,16 +155,16 @@ header nav ul.navbar .active{
 .content .content-form button{
     width: 100%;
     height: 45px;
-    background: #422761;
+    background: #b1c7dc;
     border: 0;
-    color: #ccc;
+    color: #333;
     font-size: 1.3em;
     outline: 0;
     cursor: pointer;
 }
 
 .content .content-form button:hover{
-    background: #6e4998;
+    background: #77a6d6;
 }
 
 .content .message{
