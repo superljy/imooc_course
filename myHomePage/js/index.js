@@ -13,8 +13,8 @@ $(document).ready(function(){
             }
             if (index == 2) {
                 $(".page2").addClass("current");
-                $(".page2 .intro h1").addClass("animated fadeInDown");
-                $(".page2 .intro p").addClass("animated rotateInUpLeft");
+                $(".page2 .intro h1").show().addClass("animated fadeInDown");
+                $(".page2 .intro p").show().addClass("animated rotateInUpLeft");
                 $(".page2 .intro img").show().addClass("animated zoomIn");
             }
         }
