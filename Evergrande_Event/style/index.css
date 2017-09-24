@@ -14,133 +14,261 @@ a{
 	text-decoration: none;
 }
 
-img{
+html,body{
 	width: 100%;
 	height: 100%;
 }
 /* reset end */
 
-/* bg pic start */
+/* container */
 .container{
-	width: 7.5rem;
-	height: 13.34rem;
-	margin: 0 auto;
-	background: url('../img/bg.png') no-repeat;
-	background-size: cover;
-	position: relative;
-}
-/* bg pic end */
-
-/* content start */
-/* top nav */
-.navbar{
 	width: 100%;
-	height: .78rem;
+	height: 100%;
+	/* height: 13.34rem; */
+	background: url(../img/bg.jpg) no-repeat;
+	background-size: 100% 100%;
 	position: relative;
 }
 
-.navbar img{
+/* nav */
+nav{
+	width:100%;
+	height: .78rem;
+	background: url(../img/header.png) no-repeat;
+	background-size: 100% 100%;
+	position: fixed;
+}
+
+nav .more-btn{
+	width: 1.24rem;
+	height: .5rem;
+	position: absolute;
+	top: .14rem;
+	right: .09rem;
+}
+
+nav .more-btn img{
+	width: 100%;
 	position: absolute;
 }
 
-.navbar a{
+nav .more-btn img a{
 	display: block;
-    width: 1.3rem;
-    height: .6rem;
-    position: absolute;
-    top: .14rem;
-    right: .13rem;
+	width: 100%;
+	height: 100%;
 }
 
-/* ball logo */
-.crazy-ball{
-	width: 1.14rem;
-	height: .96rem;
+/* info */
+.signup-info{
+	/* width: 5.51rem;
+	height: 3.36rem; */
+	width: 75%;
+	height: 26%;
 	position: absolute;
-	top: .98rem;
-	left: .31rem;
-}
-
-/* pre logo */
-.pre-logo{
-	width: 1.77rem;
-	height: 1.13rem;
-	position: absolute;
-	top: .85rem;
-	right: .22rem;
-}
-
-
-/* main-content */
-.main-content{
-	position: absolute;
-	top: 4.43rem;
-	width: 5.5rem;
 	left: 50%;
-	margin-left: -2.75rem;
-}
-/* flag */
-.flag{
-	width: 2.03rem;
-	height: 2.03rem;
-	position: absolute;
-	top: -.55rem;
-	left: -.3rem;
+	/* bottom: 1.48rem; */
+	bottom: 11%;
+	/* margin-left: -2.75rem; */
+	margin-left: -37%;
 }
 
-.s5{
-	width: .92rem;
+.signup-info .select{
+	width: 100%;
+	/* height: .8rem; */
+	height: 25%;
+	position: absolute;
+	z-index: 9;
+}
+
+.signup-info .select>img{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+.signup-info .select .sel-menu{
+	width: 100%;
+	/* height: 1.65rem; */
+	height: 200%;
+	position: absolute;
+	top: 90%;
+	left: 0;
+	z-index: 5;
+	display: none;
+}
+
+.signup-info .select .sel-menu img{
+	width: 100%;
+	height: 50%;
+	position: absolute;
+}
+
+.signup-info .select .sel-menu img:first-child{
+	height: 50%;
+	top: 0;
+}
+
+.signup-info .select .sel-menu img:last-child{
+	height: 50%;
+	bottom: 0;
+}
+
+.signup-info .select .sel-menu .pick{
+	width: .34rem;
+	height: .34rem;
+	background: url(../img/pick.png) no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	right: 5%;
+	z-index: 10;
+}
+
+.signup-info .select .sel-menu .up{
+	top: 15%;
+	display: none;
+}
+
+.signup-info .select .sel-menu .down{
+	bottom: 15%;
+	display: none;
+}
+
+.signup-info .phone-num{
+	width: 100%;
+	/* height: .66rem; */
+	height: 23%;
+	position: absolute;
+	/* top: .9rem; */
+	top: 27%;
+}
+
+.signup-info .phone-num .input-num{
+	width: 100%;
+	height: 100%;		
+	font-size: .18rem;
+	position: absolute;
+	border: 0;
+	border-radius: .07rem;
+	padding: .05rem .2rem;
+	outline: none;
+}
+
+.signup-info .code{
+	width: 100%;
+	/* height: .68rem; */
+	height: 21%;
+	position: absolute;
+	/* bottom: .78rem; */
+	bottom: 27%;
+}
+
+.signup-info .code .input-code{
+	/* width: 3.31rem; */
+	width: 55%;
+	height: 100%;
+	font-size: .18rem;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border: 0;
+	border-radius: .07rem;
+	padding: .05rem .2rem;
+	outline: none;
+}
+
+.signup-info .code .get-code-btn{
+	/* width: 2.06rem; */
+	width: 40%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.signup-info .code .get-code-btn img{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+.signup-info .signup-btn{
+	width: 100%;
+	/* height: .66rem; */
+	height: 25%;
+	position: absolute;
+	bottom: 0;
+}
+
+.signup-info .signup-btn img{
+	width: 101%;
+	height: 100%;
+	position: absolute;
+}
+
+
+
+
+/* introduce */
+.introduce{
+	width: 1.11rem;
+	height: .28rem;
+	position: absolute;
+	left: 50%;
+	bottom: .45rem;
+	margin-left: -.55rem;
+}
+
+.introduce img{
+	width: 100%;
+	position: absolute;
+}
+
+/* intro-detail */
+.intro-detail{
+	width: 100%;
+	/* height: 13.34rem; */
+	height: 100%;
+	background: url(../img/intro-detail.png) no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 99;
+	display: none;
+}
+
+.intro-detail .intro-detail-btn{
+	width: 1.99rem;
 	height: .63rem;
+	background: url(../img/intro-confirm.png) no-repeat;
+	background-size: 100% 100%;
 	position: absolute;
-	top: .11rem;
-	left: .9rem;
+	left: 50%;
+	margin-left: -.99rem;
+	bottom: 8%;
 }
 
-.s5 img{
+/* input-num-tip */
+.input-num-tip{
+	width: 100%;
+	/* height: 13.34rem; */
+	height: 100%;
+	background: url(../img/input-num-tip.png) no-repeat;
+	background-size: 100% 100%;
 	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 99;
+	display: none;
 }
 
-/* old client */
-.old-client{
-	width: 3.7rem;
-	height: .92rem;
-	margin: 0 auto;
-}
-
-/* free */
-.free{
+.input-num-tip .input-num-tip-btn{
+	width: 1.99rem;
+	height: .63rem;
+	background: url(../img/intro-confirm.png) no-repeat;
+	background-size: 100% 100%;
 	position: absolute;
-	top: 1.06rem;
+	left: 50%;
+	margin-left: -.99rem;
+	bottom: 40%;
 }
-
-/* quota */
-.quota{
-	width: 5.22rem;
-    height: .39rem;
-    position: relative;
-    left: .2rem;
-    top: 1.2rem;
-    margin-top: .27rem;
-    color: #fff;
-    font-size: .41rem;
-    font-weight: bold;
-    text-align: center;
-    line-height: .39rem;
-    letter-spacing: 3px;
-}
-
-/* time */
-.time{
-	width: 3.96rem;
-	height: .29rem;
-	margin-top: 1.45rem;
-	margin-left: .8rem;
-	color: #fff;
-	font-size: .3rem;
-	text-align: center;
-	line-height: .29rem;
-}
-
-/* form */
-
-/* content end */
